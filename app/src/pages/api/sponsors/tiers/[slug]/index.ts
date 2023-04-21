@@ -34,10 +34,5 @@ export default function SponsorTierDetails(
     return ResponseNotFound(res);
   }
 
-  delete (
-    targetTier as Omit<typeof targetTier, "sponsors"> &
-      Partial<Pick<typeof targetTier, "sponsors">>
-  ).sponsors;
-
   res.status(200).json(targetTier);
 }
