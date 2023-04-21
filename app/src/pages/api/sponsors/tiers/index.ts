@@ -16,6 +16,7 @@ export default function SponsorTiers(
       order: tier.order,
       hasLogo: tier.hasLogo,
       hasDescription: tier.hasDescription,
+      sponsors: tier.sponsors,
     }));
 
   res.status(200).json(tiers);
