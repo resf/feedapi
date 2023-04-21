@@ -44,5 +44,11 @@ export default function SponsorDetails(
     return ResponseNotFound(res);
   }
 
-  res.status(200).json(targetSponsor);
+  const targetSponsorWithPerks = {
+    ...targetSponsor,
+    hasLogo: targetTier.hasLogo,
+    hasDescription: targetTier.hasDescription,
+  };
+
+  res.status(200).json(targetSponsorWithPerks);
 }
