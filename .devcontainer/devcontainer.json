@@ -33,7 +33,8 @@
       "extensions": [
         "dbaeumer.vscode-eslint",
         "esbenp.prettier-vscode",
-        "irongeek.vscode-env"
+        "irongeek.vscode-env",
+        "unifiedjs.vscode-mdx"
       ]
     }
   }
